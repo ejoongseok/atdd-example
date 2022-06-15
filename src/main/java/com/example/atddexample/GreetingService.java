@@ -8,7 +8,12 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 public class GreetingService {
+
+	EmployeeRepository repository;
+
 	public String greet(String lastName) {
-		return "Who is this " + lastName + " you're talking about?";
+		return repository.findByLastName(lastName)
+			.map(e -> String.format("Hello %s %s!", e.getFirstName(), e.getLastName()))
+			.orElse("Who is this " + lastName + " you're talking about?");
 	}
 }
