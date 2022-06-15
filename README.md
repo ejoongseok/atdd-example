@@ -8,7 +8,7 @@
 - 존재하지 않는 경우 "Who is this lastName you're talking about?"을
 반환한다.
 
-출처: https://github.com/msbaek/atdd-example
+예제 코드는 백명석님의 [atdd-example](https://github.com/msbaek/atdd-example)을 참고하였습니다.
 
 ---
 
@@ -23,6 +23,8 @@ restAssured에 대해서는 원격의 CI서버에서 원격의 검증 서버에 
 실제로 이러한 경험을 해보지 않아서 현재의 레벨에서는 Spring Mock Mvc로 대체해서 실습해봐도 될거같다.
 
 ---
-### 테스트 작성에 대한 추천 글
+### References
 
-- shiren: [유용한 테스트 케이스를 위한 개발자의 자세](https://blog.shiren.dev/2020-06-15-%EC%9C%A0%EC%9A%A9%ED%95%9C%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%A5%BC%EC%9C%84%ED%95%9C%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98%EC%9E%90%EC%84%B8/)
+- [유용한 테스트 케이스를 위한 개발자의 자세](https://blog.shiren.dev/2020-06-15-%EC%9C%A0%EC%9A%A9%ED%95%9C%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%A5%BC%EC%9C%84%ED%95%9C%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98%EC%9E%90%EC%84%B8/)
+- [우아한 ATDD 정리글](https://data-make.tistory.com/724)
+- [우아한 ATTD 영상](https://www.youtube.com/watch?v=ITVpmjM4mUE&list=WL&index=3)
