@@ -9,6 +9,6 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class GreetingService {
 	public String greet(String lastName) {
-		return null;
+		return "Who is this " + lastName + " you're talking about?";
 	}
 }
