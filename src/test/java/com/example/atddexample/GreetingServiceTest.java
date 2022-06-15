@@ -12,10 +12,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @ExtendWith(MockitoExtension.class)
 class GreetingServiceTest {
-	private GreetingService greetingService;
+	GreetingService greetingService;
 	@Mock EmployeeRepository repository;
 	String nonExistingLastName = "nonExistingLastName";
 	String existingLastName = "existingLastName";
@@ -24,9 +25,10 @@ class GreetingServiceTest {
 
 	@BeforeEach
 	void setUp() {
-	    greetingService = new GreetingService();
-		greetingService.repository = repository;
+		greetingService = new GreetingService(repository);
 	}
+
+
 
 	@Test
 	void greet_with_nonExisting_last_name_should_return_default_message() {
